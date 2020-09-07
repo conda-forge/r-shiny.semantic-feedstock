@@ -1,4 +1,4 @@
-{% set version = '0.3.0' %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shiny.semantic_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shiny.semantic/shiny.semantic_{{ version }}.tar.gz
-  sha256: 25bc6dd726e47f01c612c3dc70e83519324e9913130ef2c659885299019d9c4d
+  sha256: 83adba652bdda3372856dbfc9e855dbc7ca31a305fe20fa617093af238909553
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,13 +48,11 @@ test:
 about:
   home: https://CRAN.R-project.org/package=shiny.semantic
   license: MIT
-  summary: Creating a great user interface for your Shiny apps can be a hassle, especially if
-    you want to work purely in R and don't want to use, for instance HTML templates.
-    This package adds support for a powerful UI library Semantic UI - <http://semantic-ui.com/>.
-    It also supports universal UI input binding that works with various DOM elements.
+  summary: Creating a great user interface for your Shiny apps can be a hassle, especially if you want to work purely in R and don't want to use, for instance HTML templates. This package adds support for a powerful UI library Semantic UI - <http://semantic-ui.com/>. It also supports universal UI input binding that works
+    with various DOM elements.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
