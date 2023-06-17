@@ -1,11 +1,11 @@
-About r-shiny.semantic
-======================
+About r-shiny.semantic-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shiny.semantic-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=shiny.semantic
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shiny.semantic-feedstock/blob/main/LICENSE.txt)
 
 Summary: Creating a great user interface for your Shiny apps can be a hassle, especially if you want to work purely in R and don't want to use, for instance HTML templates. This package adds support for a powerful UI library Semantic UI - <http://semantic-ui.com/>. It also supports universal UI input binding that works with various DOM elements.
 
