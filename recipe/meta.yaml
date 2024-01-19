@@ -25,19 +25,25 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-r6
+    - r-glue
     - r-htmltools >=0.2.6
     - r-htmlwidgets >=0.8
     - r-jsonlite
     - r-magrittr
     - r-purrr >=0.2.2
+    - r-semantic.assets >=1.1.0
     - r-shiny >=0.12.1
   run:
     - r-base
+    - r-r6
+    - r-glue
     - r-htmltools >=0.2.6
     - r-htmlwidgets >=0.8
     - r-jsonlite
     - r-magrittr
     - r-purrr >=0.2.2
+    - r-semantic.assets >=1.1.0
     - r-shiny >=0.12.1
 
 test:
